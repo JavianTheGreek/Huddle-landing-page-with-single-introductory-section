@@ -1,0 +1,82 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts/fonts" as *;
+@use "../abstracts/colors" as *;
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    margin: 0 auto;
+    
+}
+
+.landing-img {
+    margin: 35px 0;
+}
+
+main {
+
+    h1,
+    p {
+        @include desc;
+    }
+
+    h1 {
+        font-family: $Poppins;
+        font-size: 1.75rem;
+        font-weight: 600;
+    }
+
+    p {
+        font-family: $Sans;
+        font-size: 18px;
+        line-height: 1.8;
+        margin-top: 15px;
+        padding: 0 20px;
+    }
+
+    .btn {
+        @include desc;
+        margin-top: 25px;
+    }
+
+    .register {
+        color: $Violet;
+        font-weight: 600;
+        padding: 12px 80px;
+        border-radius: 40px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        transition: .2s ease-in-out;
+
+        &:hover {
+            color: #fff;
+            background-color: $Soft-Magenta;
+        }
+    }
+
+    .socials {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        ion-icon {
+            font-size: 20px;
+            border: 1px solid #fff;
+            padding: 8px;
+            color: #fff;
+            border-radius: 50%;
+            cursor: pointer;
+            margin-top: 60px;
+            transition: .2s ease-in-out;
+
+
+            &:hover {
+                color: $Soft-Magenta;
+                border: 1px solid $Soft-Magenta;
+            }
+        }
+    }
+}

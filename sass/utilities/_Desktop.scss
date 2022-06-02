@@ -1,0 +1,57 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts/fonts" as *;
+@use "../abstracts/colors" as *;
+
+@include mq(1024px) {
+    body {
+        background: url(/images/bg-desktop.svg) no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-color: hsl(257deg, 40%, 49%);
+    }
+
+    main {
+        .landing-img {
+            width: 550px;
+        }
+
+        h1,
+        p {
+            text-align: left;
+        }
+
+        h1 {
+            padding-right: 100px;
+        }
+
+        p {
+            font-size: 16px;
+            padding: 0px;
+        }
+
+        .btn {
+            text-align: left;
+            margin-top: 25px;
+        }
+
+        .register {
+            padding: 15px 60px;
+        }
+    }
+
+    .beside {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .showcase {
+        position: relative;
+
+        .socials {
+            position: absolute;
+            left: 80%;
+            bottom: -100px;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+@use "./colors" as *;
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(../images/bg-mobile.svg) no-repeat;
+    background-size: contain;
+    background-position: 0px -10px;
+    background-color: $Violet;
+    min-height: 100vh;
+}
+
+img {
+    max-width: 100%;
+}
