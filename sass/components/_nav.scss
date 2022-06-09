@@ -1,9 +1,16 @@
-@use "../abstracts/mixins" as *;
+@use '../util/breakpoints' as *;
 
 header {
     .logo {
         padding: 30px 0;
         width: 150px;
         margin-right: auto;
+    }
+
+    @include mq(1024px) {
+        .logo {
+            padding: 40px 0;
+            width: 200px;
+        }
     }
 }

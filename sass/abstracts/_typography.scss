@@ -1,4 +1,4 @@
-@use "./colors" as *;
+@use './colors' as *;
 
 * {
     margin: 0px;
@@ -10,8 +10,16 @@ body {
     background: url(../images/bg-mobile.svg) no-repeat;
     background-size: contain;
     background-position: 0px -10px;
-    background-color: $Violet;
-    min-height: 100vh;
+    background-color: var(--Violet);
+    
+    @include mq(1024px) {
+        body {
+            background: url(../images/bg-desktop.svg) no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-color: var(--Violet);
+        }
+    }
 }
 
 img {

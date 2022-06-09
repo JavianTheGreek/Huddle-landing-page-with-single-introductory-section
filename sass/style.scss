@@ -1,4 +1,5 @@
-@use "./layout" as *;
+@use './gobal/index' as *;
+
 
 
 
@@ -8,5 +9,5 @@
 }
 
 .attribution a {
-    color: $Soft-Magenta;
+    color: var(--Soft-Magenta);
 }
