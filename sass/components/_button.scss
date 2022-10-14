@@ -5,6 +5,10 @@
 .btn {
     margin-top: 25px;
     margin-left: 10px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     @include mq(1024px) {
         .register {
